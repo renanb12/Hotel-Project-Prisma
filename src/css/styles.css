@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+body{
+    background-color: #0b1d2600;
+    color: white;
+    margin: 0;
+    overflow-x: hidden; 
+    z-index: 2;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    max-width: 1920px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 0px 40px 0px 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#logoTittle{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 5px;
+    font-weight: 300;
+    letter-spacing: 15px;
+    z-index: 2;
+    opacity: 50%;
+}
+
+#logoTittle:hover {
+    opacity: 0.8; 
+}
+
+
+.logoAcc {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    width: 15px; 
+    height: 15px;
+    margin-top: 6px; 
+    position: relative;
+    z-index: 10;
+}
+
+.logoAcc img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+button.logoAcc:hover {
+    opacity: 0.8; 
+}
+
+.upTittle{
+    display: inline-block;
+    z-index: 2;
+}
+
+#smallTittle {
+    font-family: Montserrat;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 7px;
+    margin-left: 45px;
+    color: #FBD784;
+    z-index: 2;
+    display: inline-block;
+}
+
+#linha{
+    color: #FBD784;
+    width: 35px;
+    margin-top: -8px;
+    border-color: #FBD784;
+    z-index: 2;
+    position: relative;
+    display: block;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 80px 50px 0px 40px;
+    z-index: 2;
+}
+
+.container{
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 15px 0px 0px 0px;
+    line-height: 3rem;
+    z-index: 2;
+}
+
+#E{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #FBD784;
+    z-index: 2;
+}
+
+.infoAbaixo{
+    display: inline-block;
+    margin-top: -10px;
+    z-index: 2;
+}
+
+.info {
+    margin: 30px 0px -14px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 8px;
+    opacity: 95%;
+    z-index: 2;
+}
+
+#setaDeslizar{
+    width: 15px;
+    height: 15px;
+    margin-left: 84px;
+    z-index: 2;
+}
+
+.background{
+    width: 100%; 
+    height: 150vh;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    filter:grayscale(35%);
+}
+
+.scrollLado{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 7px;
+    z-index: 10;
+    transition: opacity 0.5s ease; 
+}
+
+#linhaScroll {
+    width: 80px;
+    z-index: 2;
+    transform: rotate(90deg);
+    position: fixed;
+    right: -31px; 
+    top: 15rem;
+    border-width: 1.5px;
+    opacity: 0.3;
+}
+
+.itensScroll {
+    display: block; 
+    position: fixed;
+    right: 1rem; 
+    top: 12.45rem;
+    text-align: right;
+    line-height: 22px;
+}
+
+.perguntas{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+.titulo{
+    font-family: Montserrat;
+    font-size: 14px;
+    margin-top: -40px;
+    z-index: 10;
+}
+
+#txtTitulo{
+    font-weight: 400;
+    text-shadow: 1px 4px 5px black;
+    text-align: center;
+    font-size: 24px;
+}
+
+#subText{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 8px;
+    margin-top: 5px;
+    margin-left: 10px;
+    opacity: 0.5;
+    letter-spacing: 12px;
+    
+}
+
+.sombraLinear {
+    width: 100%;
+    height: 150vh; 
+    background: linear-gradient(to bottom, rgba(11, 29, 38, 0) 0%, #0B1D26 100%);
+    position: relative;
+    top: 150px;
+    z-index: 1;
+    padding: 100px 0px 0px 0px;
+}
+
+
+.painel {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin-top: 60px;
+    margin-left: 76vh;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    max-width: 400px;
+}
+
+.input-group {
+    display: flex;         /* Usa flexbox para alinhamento */
+    flex-direction: column; /* Coloca label e input em coluna */
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 13px;
+    font-weight: 300;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 90px;
+    background-color: #afa04c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    font-size: 16px; 
+    width: 100%; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #d69710;
+}
+
+.booking-result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #0b1d2649; 
+    color: white; 
+    text-align: center;
+    padding: 10px 0; 
+    position: relative;
+    width: 100%; 
+    bottom: 0;
+    z-index: 2; 
+    font-family: Montserrat;
+    margin-top: 95px;
+
+}
+
+.footer-container {
+    max-width: 650px; 
+    margin: auto; 
+}
+
+footer p {
+    font-size: 10px;
+    opacity: 0.7;
+    display: inline-block;
+    flex-direction: column;
+}
+
+#p1{
+    padding-right: 7px;
+    font-weight: 600;
+}
+
+#p2{
+    font-weight: 500;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 0 30px;
+    }
+
+    #logoTittle {
+        font-size: 12px;
+    }
+
+    .logoAcc {
+        width: 14px;
+        height: 14px;
+    }
+
+    .information {
+        margin: 150px 30px 0 30px;
+    }
+
+    .container {
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+    }
+
+    #E {
+        font-size: 1.9rem;
+    }
+
+    .info {
+        font-size: 7.5px;
+    }
+
+    .scrollLado {
+        font-size: 6.5px;
+    }
+
+  
+
+    .itensScroll {
+        left: 18.8rem;
+        top: 14.50rem;
+    }
+
+    #linhaScroll{
+        top: 17rem
+    }
+
+    .perguntas {
+        margin-top: 200px;
+    }
+
+    .titulo {
+        font-size: 13px;
+    }
+
+    #txtTitulo {
+        font-size: 22px;
+    }
+
+    #subText {
+        font-size: 7.5px;
+    }
+
+    .sombraLinear {
+        height: 1200px;
+    }
+
+    .question {
+        font-size: 0.75rem;
+    }
+
+    #result {
+        font-size: 0.75rem;
+        margin: 20px 40px;
+    }
+
+    footer p {
+        font-size: 9.5px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+    nav {
+        padding: 0 35px;
+    }
+
+    #logoTittle {
+        font-size: 14.5px;
+    }
+
+    #headInfo{
+        font-size: 9px;
+    }
+    .logoAcc {
+        width: 20.5px;
+        height: 20.5px;
+    }
+
+    #setaDeslizar{
+        margin-left: 90px;
+    }
+
+    .information {
+        margin: 230px 35px 0 240px;
+    }
+
+    .container {
+        font-size: 3.35rem;
+        line-height: 3.9rem;
+    }
+
+    #E {
+        font-size: 3.95rem;
+    }
+
+    .info {
+        font-size: 8.75px;
+    }
+
+    .scrollLado {
+        font-size: 7.75px;
+    }
+
+    #linhaScroll{
+        top: 25.06rem
+    }
+
+    .itensScroll {
+        left: 23.7rem;
+        top: 22.45rem;
+    }
+
+    .perguntas {
+        margin-top: 220px;
+    }
+
+    .titulo {
+        font-size: 13.5px;
+    }
+
+    #txtTitulo {
+        font-size: 33px;
+    }
+
+    #subText {
+        font-size: 9.75px;
+    }
+
+    .sombraLinear {
+        height: 1250px;
+    }
+
+    .question {
+        font-size: 0.78rem;
+    }
+
+    #result {
+        font-size: 0.78rem;
+        margin: 20px 45px;
+    }
+
+    footer p {
+        font-size: 9.75px;
+    }
+}
+

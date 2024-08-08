@@ -1,6 +1,6 @@
 import { PrismaClient, Prisma } from '@prisma/client';
 
-class ClienteService {
+class ConexaoBD {
     private prisma: PrismaClient;
 
     constructor() {

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Transilvânia</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Imagem de fundo -->
+    <figure>
+        <img class="background" src="img/background.jpg" alt="background">
+    </figure>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Logo e slogan -->
+            <h1 id="logoTittle">Hotel Transilvânia</h1>
+        </nav>
+    </header>
+
+    <!-- Seção de Informações -->
+    <section class="information" id="information">
+        <div class="upTittle">
+            <!-- Título principal -->
+            <h1 id="smallTittle">brazil - rio grande do sul</h1>
+            <hr id="linha">
+        </div>
+        <div class="container">
+            <!-- Títulos secundários -->
+            <h1 class="tittle">
+                <h1 id="E">F</h1>aça agora
+            </h1>
+            <h1 class="tittle">
+                <h1 id="E">O</h1> seu cadastro
+            </h1>
+            <h1 class="tittle">
+                <h1 id="E">E</h1> aproveite!
+            </h1>
+        </div>
+
+        <!-- Informações adicionais -->
+        <div class="infoAbaixo">
+            <p class="info">Deslizar para baixo</p>
+            <figure>
+                <img id="setaDeslizar" src="img/arrow-down.png" alt="Deslize para baixo">
+            </figure>
+        </div>
+
+        <!-- Navegação lateral -->
+        <div class="scrollLado" id="scrollLado">
+            <ul class="itensScroll">
+                <li><a>Início</a></li>
+                <li><a>01</a></li>
+                <li><a>02</a></li>
+                <li><a>03</a></li>
+            </ul>
+            <hr id="linhaScroll">
+        </div>
+    </section>
+
+    <!-- Seção de Perguntas -->
+    <section class="perguntas">
+        <div class="sombraLinear">
+            <!-- Título e subtitulo -->
+            <div class="titulo">
+                <h1 id="txtTitulo">Sessão de Cadastro</h1>
+                <span id="subText">Preencha os campos abaixo:</span>
+            </div>
+
+            <!-- Formulário de diagnóstico -->
+            <div class="painel">
+                <form id="booking-form">
+                    <div class="input-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="cpf">CPF:</label> 
+            
+                        <input type="text" id="cpf" name="cpf" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email:</label> 
+            
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Senha:</label> 
+            
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="checkin">Check-in:</label> 
+            
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="checkout">Check-out:</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                    <button type="button" id="book-btn">Reservar</button>
+                </form>
+            </div>
+            
+            <div class="booking-result" id="result">
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <!-- Direitos autorais -->
+            <p id="p1">&copy; 2024 - Av. Betania Flores, 476.</p>
+            <p id="p2">Todos os direitos são reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
